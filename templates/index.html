@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Pine Tree{% endblock %}
+
+{% block page_content %}
+<div class="jumbotron">
+    <h1 class="display-4">Hello, {% if name %}{{ name }}{% else %}Stranger{% endif %}!</h1>
+    {% if not known %}
+    <p>Pleased to meet you. Enjoy our services!</p>
+    {% else %}
+    <p>Happy to see you again!</p>
+    {% endif %}
+{{ wtf.quick_form(form) }}
+{% endblock %}
