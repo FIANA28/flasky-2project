@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 DB_NAME = 'flasky2'
 DB_USERNAME = 'root'
-DB_PASSWORD = 'root'
+DB_PASSWORD = ''
 DB_URL = 'mysql+pymysql://' + DB_USERNAME + ':' + DB_PASSWORD + '@localhost:8889/' + DB_NAME
 
 # configuration of mail 
